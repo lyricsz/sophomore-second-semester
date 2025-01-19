@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: x-large;
+        }
+
+        #passwordContainer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            align-content: center;
+        }
+
+        #passwordBtn{
+            margin-top: 4px;
+        }
+
+        #app{
+            display: none;
+        }
+
+        button{
+            width: 40vw;
+            font-size: 30px;
+            background: rgb(78, 88, 137);
+            margin: 2%;
+            border: none;
+        }
+
+        a, a:visited, a:hover, a:active {
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="passwordContainer">
+        <label>Password:  <input type="password" id="password"></label>
+        <br>
+        <input type="button" value="Submit" id="passwordBtn">
+    </div>
+
+    <div id="app">
+        <h2>Sophomore Second Semester</h2>
+        <hr>
+        <button class="btn"> <a href="./past papers/2021_2022/csc202.html"> CSC202 </a> </button>
+        <button class="btn"> <a href="./past papers/2021_2022/csc208.html"> CSC208 </a> </button>
+        <button class="btn"> <a href="./past papers/2021_2022/csc210.html"> CSC210 </a> </button>
+        <hr>
+        <h2>Read - Mock </h2>
+        <p>Will be updated soon.</p>
+        <hr>
+        <h3>Copyright notice</h3>
+        <p>Will be update soon.</p>
+        <hr>
+        <a href="./examTimeTable.html"><button>Timetable</button></a>
+        <a href="./schedule.html"><button>Exam Studying Schedule</button></a>
+    </div>
+    <br>
+    
+
+    <script>
+
+        const passwordBtn = document.getElementById("passwordBtn");
+        const password = document.getElementById("password");
+        const passwordContainer = document.getElementById("passwordContainer");
+        const app = document.getElementById("app");
+
+        window.addEventListener("keyup", (e) => {
+            if (e.code == "Enter"){
+                pass()
+            }
+        })
+
+        passwordBtn.onclick = pass = () => {
+            let text = password.value
+            let password2 = text
+            if (password2 == "LOVE"){
+                app.style.display = "block"
+                passwordContainer.style.display = "none"
+            }
+        }
+        //Study theory in the morning
+    </script>
+</body>
+</html>
