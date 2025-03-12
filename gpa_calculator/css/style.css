@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    padding: 8px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 253, 231);
+    border-bottom: 1px solid gray;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: gray;
+    color: sienna;
+    border-collapse: collapse;
+    border-radius: 2px;
+}
+
+table tr, table th, table td {
+    filter: drop-shadow(0px 0px 1px #ddd);
+    border: 1px ridge rgb(102, 106, 111);
+    font-weight: 900;
+    font-size: xx-large;
+    padding: 4px;
+    border-radius: 0;
+}
+
+button {
+    display: block;
+    background-color: black;
+    color: azure;
+    margin: auto;
+    padding: 8px;
+    border-radius: 4px 8px 12px 16px;
+    margin: 10px auto;
+}
+
+p {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-indent: 12px;
+    color: red;
+}
